@@ -14,5 +14,7 @@
 
 #사용했던 명령들
 npm init
+
 npm install bootstrap@3 --save
+
 npm install jquery --save
