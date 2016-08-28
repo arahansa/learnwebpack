@@ -1,0 +1,27 @@
+{
+  "name": "learnwebpack",
+  "version": "1.0.0",
+  "description": "재린님과 웹팩을 공부하면서 프론트엔드 빌드를 알아보고자함",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arahansa/learnwebpack.git"
+  },
+  "keywords": [
+    "webpack",
+    "프론트엔드빌드"
+  ],
+  "author": "arahansa,재린님",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arahansa/learnwebpack/issues"
+  },
+  "homepage": "https://github.com/arahansa/learnwebpack#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0"
+  }
+}

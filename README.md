@@ -11,3 +11,8 @@
 
 웹팩 대쉬보드 : https://techstory.shma.so/webpack-dashboard-cb3fa0038c15#.y3761a38h
 
+
+#사용했던 명령들
+npm init
+npm install bootstrap@3 --save
+npm install jquery --save
