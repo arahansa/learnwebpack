@@ -103,6 +103,17 @@
 
 
     </style>
+
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+
 </head>
 
 <body>
@@ -121,10 +132,10 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">홈</a></li>
+                <li><a href="#">홈</a></li>
                 <li><a href="signin.html">로그인</a></li>
                 <li><a href="signup.html">회원가입</a></li>
-                <li><a href="listMember.html">신림 프로그래머 명부</a></li>
+                <li class="active"><a href="listMember.html">신림 프로그래머 명부</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -133,31 +144,7 @@
 <div class="container">
     <div class="row main">
         <div class="main-login main-center">
-            <table class="table table-hover">
-                <thead>
-                <tr>
-                    <th></th>
-                    <th>NAME</th>
-                    <th>EMAIL</th>
-                    <th>USERNAME</th>
-                </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>아라한사</td>
-                        <td>arahansa@naver.com</td>
-                        <td>arahansa</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>김재린</td>
-                        <td>sleepbaer669@gmail.com</td>
-                        <td>잠자는곰</td>
-                    </tr>
-
-                </tbody>
-            </table>
+            <my-app>Loading...</my-app>
         </div>
     </div>
 
