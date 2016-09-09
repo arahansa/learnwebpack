@@ -9,8 +9,9 @@ module.exports = {
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 loader: 'url'
-            },
-            { test: /\.css$/, loader: 'style!css'}    
+            }
+            ,{ test: /\.css$/, loader: 'css-loader!autoprefixer-loader'}    
+            ,{ test: /\.scss$/, loader: "css-loader!sass-loader?sourceMap"}
         ]
     }
 };
