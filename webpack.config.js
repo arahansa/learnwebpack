@@ -11,7 +11,7 @@ module.exports = {
                 loader: 'url'
             }
             ,{ test: /\.css$/, loader: 'css-loader!autoprefixer-loader'}    
-            ,{ test: /\.scss$/, loader: "css-loader!sass-loader?sourceMap"}
+            ,{ test: /\.scss$/, loaders: ["style", "css", "sass"]}
         ]
     }
 };
