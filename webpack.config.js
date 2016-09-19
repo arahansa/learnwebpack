@@ -13,5 +13,13 @@ module.exports = {
             ,{ test: /\.css$/, loader: 'css-loader!autoprefixer-loader'}    
             ,{ test: /\.scss$/, loaders: ["style", "css", "sass"]}
         ]
+    },
+    devServer: {
+        proxy: {
+          '/api': {
+            target: 'http://localhost:8090',
+            secure: false
+          }
+        }
     }
 };
